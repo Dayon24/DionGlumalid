@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #28d55c;
   text-decoration: underline;
 }
 
@@ -71,7 +71,7 @@ section {
 }
 
 .cta-btn:hover {
-  background: #ffd700;
+  background: #28d55c;
   color: #222;
   box-shadow: 0 4px 16px rgba(44,62,80,0.12);
 }
@@ -136,5 +136,5 @@ footer {
 }
 
 .footer-socials a:hover {
-  color: #ffd700;
+  color: #28d55c;
 }
