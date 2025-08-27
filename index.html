@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dion Manuel Glumalid - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(sec => sec.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+            window.scrollTo(0,0);
+        }
+        window.onload = function() {
+            showSection('home');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dion Manuel Glumalid</h1>
+        <p>Aspiring Software Developer &amp; Future IT Instructor</p>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About Me</a>
+        <a href="#" onclick="showSection('education')">Education</a>
+        <a href="#" onclick="showSection('experience')">Experience</a>
+        <a href="#" onclick="showSection('skills')">Skills</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <!-- Homepage / Landing Page -->
+    <section id="home">
+        <h2>Welcome!</h2>
+        <p>
+            Hi, I'm Dion Manuel Glumalid. I am passionate about technology and eager to make a mark in the IT industry. My journey is driven by curiosity, dedication, and a desire to help others learn and grow.
+        </p>
+        <a class="cta-btn" href="#" onclick="showSection('about')">See More About Me</a>
+    </section>
+
+    <!-- About Me Page -->
+    <section id="about" class="hidden">
+        <h2>About Me</h2>
+        <div class="picture-frame">
+          <img src="dion.jpg" alt="Dion Manuel Glumalid" class="profile-img" />
+        </div>
+        <p>
+            I am an aspiring software developer currently pursuing my Bachelor of Science in Information Technology at World Citi Colleges Antipolo. My interests span programming, problem-solving, and sharing knowledge with others. I believe in continuous learning and adaptability, and I aim to become an IT instructor in the future to inspire the next generation of tech professionals.
+        </p>
+        <p>
+            My portfolio showcases my academic journey, hands-on experiences, and the skills I am developing along the way. I am committed to excellence and always open to new challenges and opportunities.
+        </p>
+    </section>
+
+    <!-- Education Page -->
+    <section id="education" class="hidden">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>BSIT</strong> – World Citi Colleges Antipolo <em>(2024–Present)</em></li>
+            <li><strong>Senior High</strong> – AMA Computer Learning Center <em>(2022–2024)</em></li>
+            <li><strong>Junior High</strong> – Rockfort Christian Academy <em>(2017–2021)</em></li>
+            <li><strong>Elementary</strong> – Juan Sumulong Elementary School <em>(2010–2016)</em></li>
+        </ul>
+    </section>
+
+    <!-- Experience Page -->
+    <section id="experience" class="hidden">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Work Immersion</strong> – AMA Computer Learning Center <em>(March–April 2024)</em></li>
+            <li><strong>Summer Job</strong> – Antipolo City Hall, IT Development Office <em>(June–July 2025)</em></li>
+        </ul>
+    </section>
+
+    <!-- Skills Page -->
+    <section id="skills" class="hidden">
+        <h2>Skills</h2>
+        <h3>Programming</h3>
+        <ul>
+            <li>Java</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>HTML/CSS/JAVASCRIPT(learning)</li>
+            <li>Python (learning)</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Time Management</li>
+            <li>Critical Thinking</li>
+            <li>Problem-Solving</li>
+            <li>Adaptability</li>
+            <li>Willingness to Learn</li>
+        </ul>
+    </section>
+
+    <!-- Projects Page -->
+    <section id="projects" class="hidden">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>BookATicket</strong> (Java Swing Project)</li>
+            <li>School projects and personal coding practice (more coming soon!)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Address:</strong> EastVille Subdivision, Brgy San Jose, Antipolo City, Rizal</li>
+            <li><strong>Email:</strong> glumaliddionmanuel@gmail.com</li>
+            <li><strong>Phone:</strong> +63 975 991 6859</li>
+        </ul>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Dion Manuel Glumalid. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/1BJ8KGuWDQ/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/dayonglumalid?igsh=M2x5NnBvYzk1eTVj" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/dion-manuel-glumalid-59251a312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Dayon24" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
